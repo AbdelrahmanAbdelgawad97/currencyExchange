@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="container">
+            <div class="box-rat">
+                <label>Choose a Currency change from:</label>
+                <select  class="from">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="EGP">EGP</option>
+                    <option value="KWD">KWD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+                <input class="amount" type="text" placeholder="Entry Amount">
+            </div>
+    
+            <div class="box-rat">
+                <label>Choose a Currency change to:</label>
+                <select class="to">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="EGP">EGP</option>
+                    <option value="KWD">KWD</option>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+            
+            <input class="btn" type="button" onclick="currencyExchange()" value="Convert">
+        </div>
+        <div class="result"></div>
+    </div>
+
+    <div class="choose">
+        <label>Choose a Currency</label>
+        <select class="currency">
+            <option value=""></option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="EGP">EGP</option>
+            <option value="KWD">KWD</option>
+            <option value="GBP">GBP</option>
+            <input class="btn" type="button" onclick="exchangeAll()" value="Get All Currency">
+        </select>
+        <div class="content">
+            <!-- <p>Currency From USD To EGP Is:  </p>
+            <p>Currency From USD To EGP Is:  </p>
+            <p>Currency From USD To EGP Is:  </p>
+            <p>Currency From USD To EGP Is:  </p>
+            <p>Currency From USD To EGP Is:  </p> -->
+        </div>
+    </div>
+
+    <script src="currency.js"></script>
+</body>
+</html>
